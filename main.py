@@ -47,7 +47,7 @@ while True:
     print(f"Ебашим страницу {page}")
     page_url = f"https://streamersbase.com/streamers-views?page={page}"
     page_data = scrape_page(page_url)
-    if page_data is None:  # Если данных нет, прекращаем обработку
+    if page_data is None:
         break
     all_data.extend(page_data)
     page += 1
