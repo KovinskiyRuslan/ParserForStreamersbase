@@ -51,6 +51,8 @@ while True:
         break
     all_data.extend(page_data)
     page += 1
+    if page == 100: #Тут можно добавить при необходимости
+        break
 
 
 with open('detailed_streamers_data.csv', 'w', newline='', encoding='utf-8') as file:
